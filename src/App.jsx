@@ -6,19 +6,23 @@ import ExperiencePage from "./pages/ExperiencePage";
 import AcademicPage from "./pages/AcademicPage";
 import ResumePage from "./pages/ResumePage";
 import ContactPage from "./pages/ContactPage";
+import PublicRoutes from "./routes/PublicRoutes";
+import "./css/styles.css";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route element={<HomePage />} path="/" exact />
-        <Route element={<HomePage />} path="/home" />
-        <Route element={<ResearchPage />} path="/research" />
-        <Route element={<PublicationPage />} path="/publication" />
-        <Route element={<ExperiencePage />} path="/experience" />
-        <Route element={<AcademicPage />} path="/education-awards" />
-        <Route element={<ResumePage />} path="/resume" />
-        <Route element={<ContactPage />} path="/contact" />
+        <Route element={<PublicRoutes />}>
+          <Route element={<HomePage />} path="/" exact />
+          <Route element={<HomePage />} path="/home" />
+          <Route element={<ResearchPage />} path="/research" />
+          <Route element={<PublicationPage />} path="/publication" />
+          <Route element={<ExperiencePage />} path="/experience" />
+          <Route element={<AcademicPage />} path="/education-awards" />
+          <Route element={<ResumePage />} path="/resume" />
+          <Route element={<ContactPage />} path="/contact" />
+        </Route>
       </Routes>
     </>
   );

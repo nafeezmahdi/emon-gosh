@@ -1,3 +1,101 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navbar {
+  @apply block h-full max-w-[80%] overflow-y-auto fixed z-[70];
+}
+
+.navbar {
+  @apply w-[250px];
+  background-color: rgba(33, 33, 33, 1);
+  font-family: Lato, sans-serif;
+}
+
+.nav-name {
+  @apply text-[19pt] font-[300] tracking-[1px] leading-[1.3] pb-[62.5px] pl-12 pr-9 pt-[11.5px];
+  color: rgba(255, 255, 255, 1);
+  font-family: Lato, sans-serif;
+}
+
+.nav-name {
+  @apply cursor-pointer relative no-underline z-20;
+}
+
+.nav-list {
+  @apply list-none m-0 p-0;
+}
+
+.item-p,
+.nav-item-link {
+  @apply block relative text-ellipsis whitespace-nowrap;
+}
+
+.item-link {
+  @apply cursor-pointer overflow-hidden align-middle pl-3;
+}
+
+.content {
+  @apply bg-cover table relative table-fixed w-full;
+}
+
+.content-item {
+  @apply w-full mt-0 mb-0 max-w-[1280px];
+}
+
+.title-text {
+  @apply text-[#3d85c6]  font-[700] align-baseline leading-[0.24];
+  font-family: Cambria, Arial;
+}
+
+.contact-lists > p {
+  @apply text-[11pt] font-[400] leading-[1.6667] mt-3;
+  color: rgba(33, 33, 33, 1);
+  font-family: Lato, sans-serif;
+}
+
+.cont {
+  @apply text-[13.999999999999998pt] font-[700] align-baseline;
+  font-family: Cambria, Arial;
+}
+
+@media only screen and (min-width: 1280px) {
+  .navbar {
+    @apply left-0 pt-0;
+  }
+
+  .navbar {
+    @apply pt-[48.5px];
+  }
+
+  .nav-name {
+    @apply block;
+  }
+
+  .nav-item {
+    @apply left-[0] opacity-100;
+  }
+
+  .main {
+    @apply ml-[250px] outline-none;
+  }
+
+  .title-text {
+    @apply text-[18.0pt];
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .content:not(.LB7kq):not(.WxWicb) {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .main section:first-child .table-cell {
+    padding-top: 0;
+  }
+
+  .content-item {
+    @apply px-12;
+  }
+}
