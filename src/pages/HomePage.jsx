@@ -1,3 +1,9 @@
 export default function HomePage() {
-  return <div>HOMEPAGE</div>;
+  return (
+    <>
+      <div id="main" role="main">
+        HOME
+      </div>
+    </>
+  );
 }

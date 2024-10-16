@@ -2,12 +2,11 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ResearchPage from "./pages/ResearchPage";
 import PublicationPage from "./pages/PublicationPage";
-import ExperiencePage from "./pages/ExperiencePage";
 import AcademicPage from "./pages/AcademicPage";
 import ResumePage from "./pages/ResumePage";
-import ContactPage from "./pages/ContactPage";
 import PublicRoutes from "./routes/PublicRoutes";
-import "./css/styles.css";
+import NewsPage from "./pages/NewsPage";
+import ServicesPage from "./pages/ServicesPage";
 
 function App() {
   return (
@@ -16,12 +15,12 @@ function App() {
         <Route element={<PublicRoutes />}>
           <Route element={<HomePage />} path="/" exact />
           <Route element={<HomePage />} path="/home" />
+          <Route element={<NewsPage />} path="/news" />
           <Route element={<ResearchPage />} path="/research" />
-          <Route element={<PublicationPage />} path="/publication" />
-          <Route element={<ExperiencePage />} path="/experience" />
-          <Route element={<AcademicPage />} path="/education-awards" />
+          <Route element={<PublicationPage />} path="/publications" />
+          <Route element={<ServicesPage />} path="/services" />
+          <Route element={<AcademicPage />} path="/education" />
           <Route element={<ResumePage />} path="/resume" />
-          <Route element={<ContactPage />} path="/contact" />
         </Route>
       </Routes>
     </>
