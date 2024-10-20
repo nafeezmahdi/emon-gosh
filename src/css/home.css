@@ -1,0 +1,49 @@
+.home-content,
+.page__content {
+  @apply clear-both w-full float-left ml-0 mr-0;
+}
+
+#recent-news {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+@media (min-width: 48em) {
+  .news {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .archive {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 57.8125em) {
+  .home {
+    width: 83.0508474576%;
+    float: right;
+    margin-right: 0;
+    padding-left: 4.2372881356%;
+    padding-right: 16.9491525424%;
+  }
+
+  .news {
+    width: 83.0508474576%;
+    float: right;
+    margin-right: 0;
+    padding-left: 4.2372881356%;
+  }
+
+  .archive {
+    width: 83.0508474576%;
+    float: right;
+    margin-right: 0;
+    padding-left: 4.2372881356%;
+  }
+}

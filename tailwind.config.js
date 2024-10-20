@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        georgia: ["Georgia", "serif"],
+        trebuchet: ['"Trebuchet MS"', "sans-serif"],
+        monaco: ['"Monaco"', "sans-serif"],
+        calisto: ['"Calisto MT"', "sans-serif"],
+      },
       keyframes: {
         intro: {
           "0%": {

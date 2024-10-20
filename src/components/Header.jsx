@@ -27,9 +27,6 @@ export default function Header() {
                 <a href="/publications">Publications</a>
               </li>
               <li className="masthead__menu-item">
-                <a href="/services">Services</a>
-              </li>
-              <li className="masthead__menu-item">
                 <a href="/education">Education</a>
               </li>
               <li className="masthead__menu-item">

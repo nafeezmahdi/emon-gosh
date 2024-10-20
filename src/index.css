@@ -12,6 +12,135 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2em 0 0.5em;
+  line-height: 1.2;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+    "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.563em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+p,
+pre,
+blockquote,
+ul,
+ol,
+dl,
+figure,
+table,
+fieldset {
+  orphans: 3;
+  widows: 3;
+}
+p {
+  margin-bottom: 1.3em;
+}
+
+a {
+  color: #52adc8;
+}
+
+a:focus {
+  outline: thin dotted #f89406;
+  outline: 5px auto #f89406;
+  outline-offset: -2px;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+b,
+i,
+strong,
+em,
+blockquote,
+p,
+q,
+span,
+figure,
+img,
+h1,
+h2,
+header,
+input,
+a,
+tr,
+td,
+form button,
+input[type="submit"],
+.btn,
+#goog-wm-sb,
+.highlight,
+.archive__item-teaser {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+input,
+button,
+select,
+textarea {
+  box-sizing: border-box;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+    "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+label,
+input,
+button,
+select,
+textarea {
+  vertical-align: baseline;
+}
+
+ul li,
+ol li {
+  margin-bottom: 0.5em;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
 .masthead {
   @apply relative z-20 border-b border-[#f2f3f3] animate-intro delay-[150ms];
 }
@@ -36,6 +165,12 @@ body {
   @apply relative w-7 h-1 bg-[#fff] m-auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+#main {
+  @apply max-w-[925px] ml-auto mr-auto clear-both mt-[2em] px-[1em];
+  animation: intro 0.3s both;
+  animation-delay: 0.35s;
 }
 
 .masthead__menu ul {
@@ -68,12 +203,43 @@ body {
   transform: scaleX(0);
 }
 
-.masthead__inner-wrap::after {
-  @apply clear-both table;
-  content: "";
+.btn {
+  @apply inline-block mb-[0.25em] py-[0.5em] px-[1em] !text-[#fff] font-bold text-center no-underline bg-[#7a8288] rounded cursor-pointer;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+    "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  border: 0 !important;
 }
 
-.sidebar::after {
+.author__urls {
+  @apply hidden absolute right-0 mt-[15px] p-[10px] list-none rounded bg-[#fff] z-[-1] cursor-default;
+  border: 1px solid #f2f3f3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.page__footer {
+  @apply clear-both float-left mx-0 w-full absolute bottom-0 h-auto mt-[3em] text-[#9ba1a6] bg-[#f2f3f3];
+  -webkit-animation: intro 0.3s both;
+  animation: intro 0.3s both;
+  -webkit-animation-delay: 0.45s;
+  animation-delay: 0.45s;
+  border-top: 1px solid #bdc1c4;
+}
+
+.page__footer footer {
+  @apply clear-both mx-auto mt-[2em] max-w-full px-[1rem] pb-[2em];
+}
+
+.page__footer-follow li {
+  @apply inline-block py-[5px] text-[0.75em] uppercase;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+    "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+#main::after,
+.masthead__inner-wrap::after,
+.sidebar::after,
+.page__footer footer::after,
+.page__footer::after {
   @apply clear-both table;
   content: "";
 }
@@ -84,10 +250,16 @@ body {
     -webkit-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
   }
+
+  .author__urls {
+    @apply block relative m-0 p-0 border-[0] bg-transparent shadow-none;
+  }
 }
 
 @media (min-width: 80em) {
-  .masthead__inner-wrap {
+  #main,
+  .masthead__inner-wrap,
+  .page__footer footer {
     max-width: 1280px;
   }
 
