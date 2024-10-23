@@ -10,10 +10,11 @@ export default function ResumePage() {
           </span>
         </p>
         <iframe
-          src="/files/CV/CV-of-Shibli.pdf"
+          src="/pdf/shakil.pdf"
           width="100%"
           height="700"
-          border="0"
+          title="PDF Viewer"
+          style={{ border: "none" }}
         ></iframe>
         <p>
           <br />
