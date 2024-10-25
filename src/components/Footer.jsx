@@ -2,9 +2,9 @@ export default function Footer() {
   return (
     <div className="page__footer">
       <footer>
-        <a href="/sitemap/" className="text-inherit no-underline">
+        {/* <a href="/sitemap/" className="text-inherit no-underline">
           Sitemap
-        </a>
+        </a> */}
         <div className="page__footer-follow">
           <ul className="social-icons m-0 p-0 list-none">
             <li>
@@ -12,15 +12,15 @@ export default function Footer() {
             </li>
             <li>
               <a href="http://github.com/shahariar-shibli">
-                <i className="fab fa-github" aria-hidden="true"></i> GitHub
+                <ion-icon name="logo-github"></ion-icon> GitHub
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="https://shahariar-shibli.github.io/feed.xml">
                 <i className="fa fa-fw fa-rss-square" aria-hidden="true"></i>{" "}
                 Feed
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="page__footer-copyright">

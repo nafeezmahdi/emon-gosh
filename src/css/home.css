@@ -19,6 +19,11 @@
   transform: scaleX(0);
 }
 
+.archive a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 .home-content,
 .page__content {
   @apply clear-both w-full float-left ml-0 mr-0;

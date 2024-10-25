@@ -1,11 +1,13 @@
+import { useState } from "react";
 import { sidebarData } from "../data/data";
 
 export default function Sidebar() {
+  const [isShow, setIsShow] = useState(false);
   const { imageLink, name, bio, location, mail, scholar, linkedIn, github } =
     sidebarData;
 
   return (
-    <div className="sidebar sticky">
+    <div className="sidebar sticky-sb">
       <div itemType="http://schema.org/Person">
         {/* Image */}
         <div className="author__avatar">
@@ -16,8 +18,13 @@ export default function Sidebar() {
           <p className="author__bio">{bio}</p>
         </div>
         <div className="author__urls-wrapper">
-          <button className="btn btn--inverse">Follow</button>
-          <ul className="author__urls social-icons">
+          <button
+            className="nav-btn btn--inverse !text-[.75em]"
+            onClick={() => setIsShow(!isShow)}
+          >
+            Follow
+          </button>
+          <ul className={`author__urls social-icons ${isShow ? "!block" : ""}`}>
             <li>
               <ion-icon name="location-outline"></ion-icon> {location}
             </li>

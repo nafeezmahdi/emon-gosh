@@ -31,7 +31,7 @@ export default function HomePage() {
               className="no-underline hover:underline hover:text-black"
             >
               Advanced Intelligent Multidisciplinary Systems Lab (AIMS Lab)
-            </a>
+            </a>{" "}
             at the at{" "}
             <a
               href="https://yuedong.us/"
@@ -61,13 +61,25 @@ export default function HomePage() {
             </span> */}
           </p>
           <h2 id="recent-news">Recent News ⚡</h2>
-          <ul>
+          <ul className="pl-[40px] my-4" style={{ listStyle: "disc" }}>
             <NewsItem time="August 2024">
               <NewsItemLInk link="">
                 Domain generalization for semantic segmentation: a survey
-              </NewsItemLInk>
+              </NewsItemLInk>{" "}
               got accepted in Q1 Journal
               <NewsItemLInk>
+                {" "}
+                Artificial Intelligence Review, Springer Nature
+              </NewsItemLInk>
+              .
+            </NewsItem>
+            <NewsItem time="August 2024">
+              <NewsItemLInk link="">
+                Domain generalization for semantic segmentation: a survey
+              </NewsItemLInk>{" "}
+              got accepted in Q1 Journal
+              <NewsItemLInk>
+                {" "}
                 Artificial Intelligence Review, Springer Nature
               </NewsItemLInk>
               .

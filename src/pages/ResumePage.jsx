@@ -36,11 +36,8 @@ export default function ResumePage() {
         <h2 id="social-media">Social Media</h2>
         <p>
           <span className="text-black font-georgia">
-            {" "}
             You can find me on{" "}
-            <a href="https://www.linkedin.com/in/shahariar-shibli/">
-              LinkedIn
-            </a>{" "}
+            <a href="https://www.linkedin.com/in/shahariar-shibli/">LinkedIn</a>{" "}
             and <a href="https://twitter.com/G_M_Shahariar">Twitter</a>.{" "}
           </span>
         </p>

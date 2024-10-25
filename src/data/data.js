@@ -41,7 +41,7 @@ export const PublicationPageData = {
             "Adversarial Attacks on Parts of Speech: An Empirical Study in Text-to-Image Generation",
           titleLink: "https://arxiv.org/pdf/2409.15381",
           sideTitle: "Core A*",
-          authors: ["G M Shahariar", "Jia Chen", "Jiachen Li", "Yue Dong"],
+          authors: ["G M Shahariar", "Emon Gosh", "Jiachen Li", "Yue Dong"],
           type: "Journal",
           typeText: "EMNLP Findings",
           typeLinkText: "EMNLP 2024",

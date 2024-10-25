@@ -50,7 +50,7 @@ function PublicationItem({ data }) {
       <p>
         📌{" "}
         <a href={item.titleLink}>
-          <span className="text-blue-400 font-trebuchet">
+          <span className="text-[#0000ff] font-trebuchet">
             <strong>{item.title}</strong>
           </span>
         </a>{" "}
@@ -64,8 +64,8 @@ function PublicationItem({ data }) {
           <font size="3">
             <strong>Authors</strong>:{" "}
             {item.authors.map((author, index) =>
-              author === "G M Shahariar" ? (
-                <strong className="text-[008000]" key={author}>
+              author === "Emon Gosh" ? (
+                <strong className="!text-[#008000]" key={author}>
                   {author}
                   {index < item.authors.length - 1 && ", "}
                 </strong>
@@ -88,7 +88,11 @@ function PublicationItem({ data }) {
           (<a href={item.typeLink}>{item.typeLinkText}</a>){" "}
         </span>{" "}
         <br /> [
-        <a className="text-[red]" href="#" onClick={handleAbs}>
+        <a
+          className="text-[red] hover:!text-[red]"
+          href="#"
+          onClick={handleAbs}
+        >
           <font size="3">Abstract</font>
         </a>
         ] [

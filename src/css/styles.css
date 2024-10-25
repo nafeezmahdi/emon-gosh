@@ -73,12 +73,6 @@ body {
     "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
 
-.btn--inverse {
-  color: #7a8288 !important;
-  border: 1px solid #bdc1c4 !important;
-  background-color: #fff;
-}
-
 .author__urls-wrapper button {
   margin-bottom: 0;
 }
@@ -100,6 +94,10 @@ body {
 
 .author__urls a:hover {
   text-decoration: underline;
+}
+
+.author__name {
+  margin: 0;
 }
 
 .page__footer-follow li + li:before {
@@ -146,18 +144,21 @@ body {
 }
 
 @media (min-width: 57.8125em) {
-  .sticky {
+  .h-btn {
+    display: none;
+  }
+  .sticky-sb {
     clear: both;
     position: -webkit-sticky;
     position: sticky;
     top: 2em;
   }
 
-  .sticky > * {
+  .sticky-sb > * {
     display: block;
   }
 
-  .sticky::after {
+  .sticky-sb::after {
     clear: both;
     content: "";
     display: table;
@@ -197,5 +198,62 @@ body {
 
   .author__urls-wrapper button {
     display: none;
+  }
+}
+
+@media (max-width: 57.8125em) {
+  .greedy-nav .n-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px solid #f2f3f3;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .greedy-nav .n-links li {
+    display: block;
+    border-bottom: 1px solid #f2f3f3;
+  }
+
+  .greedy-nav .n-links a {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .greedy-nav .n-links li:last-child {
+    border-bottom: none;
+  }
+
+  .greedy-nav .n-links:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    right: 10px;
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: #f2f3f3 transparent;
+    display: block;
+    z-index: 0;
+  }
+
+  .greedy-nav .n-links:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: #fff transparent;
+    display: block;
+    z-index: 1;
   }
 }

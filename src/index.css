@@ -167,6 +167,18 @@ section {
   transition: 0.3s;
 }
 
+.greedy-nav button {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  padding: 0 0.5rem;
+  border: 0;
+  outline: none;
+  background-color: #7a8288;
+  color: #fff;
+  cursor: pointer;
+}
+
 #main {
   @apply max-w-[925px] ml-auto mr-auto clear-both mt-[2em] px-[1em];
   animation: intro 0.3s both;
@@ -203,11 +215,23 @@ section {
   transform: scaleX(0);
 }
 
-.btn {
+.nav-btn {
   @apply inline-block mb-[0.25em] py-[0.5em] px-[1em] !text-[#fff] font-bold text-center no-underline bg-[#7a8288] rounded cursor-pointer;
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
     "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   border: 0 !important;
+}
+
+.btn--inverse {
+  color: #7a8288 !important;
+  border: 1px solid #bdc1c4 !important;
+  background-color: #fff;
+}
+
+.btn--inverse:hover {
+  color: #fff !important;
+  border-color: #7a8288;
+  background-color: #333;
 }
 
 .author__urls {
