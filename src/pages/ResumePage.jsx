@@ -22,25 +22,18 @@ export default function ResumePage() {
         <h2 id="email">Email</h2>
         <ul>
           <li>
-            <span className="text-black font-georgia">
-              sshibli745[AT]gmail[DOT]com
-            </span>
+            <span className="text-black font-georgia">emongh005@gmail.com</span>
             <br />
           </li>
-          <li>
-            <span className="text-black font-georgia">
-              gm[DOT]shahariar[AT]email[DOT]ucr[DOT]edu
-            </span>
-          </li>
         </ul>
-        <h2 id="social-media">Social Media</h2>
+        {/* <h2 id="social-media">Social Media</h2>
         <p>
           <span className="text-black font-georgia">
             You can find me on{" "}
             <a href="https://www.linkedin.com/in/shahariar-shibli/">LinkedIn</a>{" "}
             and <a href="https://twitter.com/G_M_Shahariar">Twitter</a>.{" "}
           </span>
-        </p>
+        </p> */}
       </div>
     </>
   );

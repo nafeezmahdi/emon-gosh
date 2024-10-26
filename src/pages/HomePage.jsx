@@ -1,5 +1,4 @@
-import NewsItem from "../components/NewsItem";
-import NewsItemLInk from "../components/NewsItemLInk";
+import RecentNews from "../components/RecentNews";
 import "../css/home.css";
 
 export default function HomePage() {
@@ -27,14 +26,14 @@ export default function HomePage() {
             ) */}
             , a Research Engineer{" "}
             <a
-              href="https://www1.cs.ucr.edu/"
+              href="https://aimsl.uiu.ac.bd"
               className="no-underline hover:underline hover:text-black"
             >
               Advanced Intelligent Multidisciplinary Systems Lab (AIMS Lab)
             </a>{" "}
             at the at{" "}
             <a
-              href="https://yuedong.us/"
+              href="https://www.uiu.ac.bd"
               className="no-underline hover:underline hover:text-black"
             >
               United International University (UIU)
@@ -46,13 +45,19 @@ export default function HomePage() {
             className="text-justify text-black"
             style={{ fontFamily: "Georgia" }}
           >
-            I have completed a B.Sc. in Computer Science and Engineering from
-            Ahsanullah University of Science and Technology (AUST), Dhaka,
-            Bangladesh. During my undergraduate studies, I was actively involved
-            in problem-solving and conducted research in Machine Learning (ML)
-            and Deep Learning (DL) during my final year. My research interests
-            include Deep Learning, Computer Vision, Natural Language Processing,
-            Vision-Language Models, Multimodal Learning, and Medical Imaging.
+            I have completed a B.Sc. in Computer Science and Engineering from{" "}
+            <a
+              href="https://www.aust.edu/"
+              className="no-underline hover:underline hover:text-black"
+            >
+              Ahsanullah University of Science and Technology (AUST)
+            </a>
+            , Dhaka, Bangladesh. During my undergraduate studies, I was actively
+            involved in problem-solving and conducted research in Machine
+            Learning (ML) and Deep Learning (DL) during my final year. My
+            research interests include Deep Learning, Computer Vision, Natural
+            Language Processing, Vision-Language Models, Multimodal Learning,
+            and Medical Imaging.
             {/* <span className="text-[#008000]">
               <em>
                 I am open to the possibility of collaboration. Feel free to
@@ -62,28 +67,7 @@ export default function HomePage() {
           </p>
           <h2 id="recent-news">Recent News ⚡</h2>
           <ul className="pl-[40px] my-4" style={{ listStyle: "disc" }}>
-            <NewsItem time="August 2024">
-              <NewsItemLInk link="">
-                Domain generalization for semantic segmentation: a survey
-              </NewsItemLInk>{" "}
-              got accepted in Q1 Journal
-              <NewsItemLInk>
-                {" "}
-                Artificial Intelligence Review, Springer Nature
-              </NewsItemLInk>
-              .
-            </NewsItem>
-            <NewsItem time="August 2024">
-              <NewsItemLInk link="">
-                Domain generalization for semantic segmentation: a survey
-              </NewsItemLInk>{" "}
-              got accepted in Q1 Journal
-              <NewsItemLInk>
-                {" "}
-                Artificial Intelligence Review, Springer Nature
-              </NewsItemLInk>
-              .
-            </NewsItem>
+            <RecentNews />
           </ul>
         </section>
       </div>

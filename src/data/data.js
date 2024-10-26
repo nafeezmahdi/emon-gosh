@@ -2,12 +2,12 @@ export const sidebarData = {
   imageLink:
     "https://media.licdn.com/dms/image/v2/D4D03AQGrsBzp0aX0cg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1679467903252?e=1734566400&v=beta&t=usAGBnAeAsCU_BnY1uE6kSN4dwxtBpVodjFMo3PrwWg",
   name: "Emon Gosh",
-  bio: "PhD Student @ UC Riverside || LLMs, AI Safety, Bias &amp; Fairness",
-  location: "Riverside",
-  mail: "sshibli745@gmail.com",
-  scholar: "https://scholar.google.com/citations?user=GBaSF7MAAAAJ&amp;hl=en",
-  linkedIn: "https://www.linkedin.com/in/shahariar-shibli",
-  github: "https://github.com/shahariar-shibli",
+  bio: "Research Engineer @ Aims Lab",
+  location: " Dhaka, Bangladesh",
+  mail: "emongh005@gmail.com",
+  scholar: "https://scholar.google.com/citations?user=imWdKtMAAAAJ&hl=en",
+  linkedIn: "https://www.linkedin.com/in/emon-ghosh/",
+  github: "https://github.com/EEE001",
 };
 
 export const ResearchPageData = {
@@ -28,8 +28,7 @@ export const ResearchPageData = {
 };
 
 export const PublicationPageData = {
-  scholarLink:
-    "https://scholar.google.com/citations?hl=en&amp;user=GBaSF7MAAAAJ&amp;view_op=list_works&amp;sortby=pubdate",
+  scholarLink: "https://scholar.google.com/citations?user=imWdKtMAAAAJ&hl=en",
   data: [
     {
       id: crypto.randomUUID(),
