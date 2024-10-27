@@ -11,7 +11,7 @@ export default function Footer() {
               <strong>Follow:</strong>
             </li>
             <li>
-              <a href="http://github.com/shahariar-shibli">
+              <a href="https://github.com/EEE001">
                 <ion-icon name="logo-github"></ion-icon> GitHub
               </a>
             </li>
@@ -24,7 +24,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="page__footer-copyright">
-          © 2024 G M Shahariar Shibli. Powered by{" "}
+          © 2024 Emon Gosh. Powered by{" "}
           <a href="http://jekyllrb.com" rel="nofollow">
             Jekyll
           </a>{" "}
