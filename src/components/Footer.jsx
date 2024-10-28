@@ -24,7 +24,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="page__footer-copyright">
-          © 2024 Emon Gosh. Powered by{" "}
+          © 2024 Emon Ghosh. Powered by{" "}
           <a href="http://jekyllrb.com" rel="nofollow">
             Jekyll
           </a>{" "}

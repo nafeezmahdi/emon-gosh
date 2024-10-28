@@ -64,7 +64,7 @@ function PublicationItem({ data }) {
           <font size="3">
             <strong>Authors</strong>:{" "}
             {item.authors.map((author, index) =>
-              author === "Emon Gosh" ? (
+              author === "Emon Ghosh" ? (
                 <strong className="!text-[#008000]" key={author}>
                   {author}
                   {index < item.authors.length - 1 && ", "}

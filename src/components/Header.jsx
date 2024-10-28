@@ -47,7 +47,7 @@ export default function Header() {
               <ul className="visible-links table">
                 <li className="masthead__menu-item masthead__menu-item--lg font-bold">
                   <a href="/" className="!ml-0 relative no-underline">
-                    Emon Gosh
+                    Emon Ghosh
                   </a>
                 </li>
               </ul>
