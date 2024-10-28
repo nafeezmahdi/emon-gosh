@@ -1,7 +1,7 @@
 export const sidebarData = {
   imageLink:
     "https://media.licdn.com/dms/image/v2/D4D03AQGrsBzp0aX0cg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1679467903252?e=1734566400&v=beta&t=usAGBnAeAsCU_BnY1uE6kSN4dwxtBpVodjFMo3PrwWg",
-  name: "Emon Gosh",
+  name: "Emon Ghosh",
   bio: "Research Engineer @ Aims Lab",
   location: " Dhaka, Bangladesh",
   mail: "emongh005@gmail.com",
@@ -40,7 +40,7 @@ export const PublicationPageData = {
             "Adversarial Attacks on Parts of Speech: An Empirical Study in Text-to-Image Generation",
           titleLink: "https://arxiv.org/pdf/2409.15381",
           sideTitle: "Core A*",
-          authors: ["G M Shahariar", "Emon Gosh", "Jiachen Li", "Yue Dong"],
+          authors: ["G M Shahariar", "Emon Ghosh", "Jiachen Li", "Yue Dong"],
           type: "Journal",
           typeText: "EMNLP Findings",
           typeLinkText: "EMNLP 2024",
